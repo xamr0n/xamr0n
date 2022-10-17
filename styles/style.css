@@ -1,0 +1,353 @@
+html {
+ font-size: 16px;
+ font-family: 'Candara', serif;
+ background-color: #303030;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+h1 {
+ margin: 1;
+ padding: 1px 0;
+ font-size: 36px;
+ text-align: center;
+ color: #555;
+ line-height: .5;
+ text-shadow: 4px 4px 4px #aaa;
+}
+
+h2 {
+ font-size: 24px;
+ text-align: start;
+ color: #555;
+ line-height: .5;
+ text-shadow: 4px 4px 4px #aaa;
+}
+
+h3 {
+ font-size: 20px;
+ text-align: start;
+ color: #555;
+ line-height: 1;
+ text-shadow: 4px 4px 4px #aaa;
+}
+
+h4 {
+ font-size: 16px;
+ color: #555;
+ text-align: start;
+ line-height: 0;
+ margin: 15px auto 5px;
+ text-shadow: 4px 4px 4px #aaa;
+}
+
+p,
+li {
+ text-align: start;
+ font-size: 16px;
+ line-height: 1;
+ color: #555;
+ margin: 10px auto;
+ letter-spacing: 1px;
+}
+
+body {
+ inline-size: 1000px;
+ margin: 1px auto 0;
+ background-color: white;
+ padding: 0 20px 20px 20px;
+ border: 2px solid #444;
+}
+
+.fa-linkedin {
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
+}
+
+.fa-github {
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
+}
+
+.fa-facebook {
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
+}
+
+.fa-codepen {
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
+}
+
+.fa-envelope {
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
+}
+
+a {
+ color: #eee;
+ float: none;
+ background: transparent;
+ text-shadow: 1px 1px 1px #111;
+}
+
+.container {
+ padding: 20px;
+}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both
+}
+
+.column-66 {
+ float: left;
+ width: 66.666666%;
+ padding: 10px;
+}
+
+.column-33 {
+ float: left;
+ width: 33.333333%;
+ padding: 10px;
+}
+
+.column {
+ float: left;
+ width: 25%;
+ padding: 0;
+}
+
+.button {
+ font-family: "Candara";
+ text-shadow: 4px 4px 4px #111;
+ background: #505050;
+ border: 2px solid black;
+ border-radius: 1px;
+ color: #eee;
+ width: 100%;
+ padding: 8px 10px;
+ font-size: 16px;
+ cursor: pointer;
+}
+
+img {
+ display: block;
+ height: auto;
+ max-width: 100%;
+ margin: 0;
+ border: 3px solid #505050;
+}
+
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ padding: 10px;
+ text-align: center;
+ background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+ .column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+ }
+}
+
+@media screen and (max-width: 1000px) {
+
+ .column-66,
+ .column-33 {
+  width: 100%;
+  text-align: center;
+ }
+
+ img {
+  margin: auto;
+ }
+}
+
+.navbar {
+ overflow: hidden;
+ background-color: #505050;
+}
+
+.header {
+ text-align: center;
+ margin: 5px auto;
+ padding: 10px;
+ overflow: hidden;
+ background-color: #505050;
+}
+
+.header a {
+ text-align: center;
+ display: absolute;
+ padding: 10px;
+ text-decoration: none;
+}
+
+.footer {
+ text-align: center;
+ margin: 5px auto;
+ overflow: hidden;
+ padding: 10px;
+ background-color: #505050;
+}
+
+.footer a {
+ text-align: center;
+ display: absolute;
+ padding: 10px;
+ text-decoration: none;
+}
+
+.navbar a {
+ float: left;
+ display: block;
+ font-size: 16px;
+ color: #eee;
+ text-align: center;
+ padding: 10px 12px;
+ text-decoration: none;
+}
+
+.dropdown {
+ float: left;
+ overflow: hidden;
+}
+
+.dropdown .dropbtn {
+ 333 font-size: 16px;
+ border: none;
+ outline: none;
+ color: white;
+ padding: 10px 12px;
+ background-color: inherit;
+ font-family: inherit;
+ margin: 0;
+ text-shadow: 4px 4px 4px #111;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+ background-color: #999;
+}
+
+.dropdown-content {
+ background-color: transparent;
+ min-width: auto;
+ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+ z-index: 1;
+}
+
+.dropdown-content a {
+ color: black;
+ padding: 5px 6px;
+ text-decoration: none;
+ display: block;
+ text-align: left;
+}
+
+.sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+
+.sticky+.content {
+ padding-top: 60px;
+}
+
+.skills {
+ text-align: right;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ color: white;
+}
+
+.outlook {
+ width: 87%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.word {
+ width: 82%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.excel {
+ width: 88%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.powerpoint {
+ width: 85%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.powerbi {
+ width: 75%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.collapsible {
+ font-family: "Candara";
+ text-shadow: 4px 4px 4px #111;
+ background-color: #555;
+ color: white;
+ cursor: pointer;
+ padding: 10px;
+ width: 100%;
+ border: 2px solid white;
+ text-align: left;
+ outline: none;
+ font-size: 16px;
+}
+
+.active,
+.collapsible:hover {
+ background-color: #333;
+}
+
+.collapsible:after {
+ content: '\002B';
+ color: white;
+ float: right;
+ margin-left: 5px;
+}
+
+.active:after {
+ content: "\2212";
+}
+
+.content {
+ max-height: 1;
+ margin: 0px 0px 10px 10px;
+ display: none;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
+ background-color: white;
+}
+
+.skillbar {
+ overflow: hidden;
+ color: #333;
+ letter-spacing: 1px;
+ display: block;
+ padding: 5px 5px;
+ background-color: #eee;
+}
