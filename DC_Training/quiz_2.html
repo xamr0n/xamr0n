@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DC Quick Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #fff;
+      font-family: Candara, sans-serif;
+      color: #666;
+    }
+
+    nav {
+      background: #fff;
+      position: flex;
+      overflow: nonscroll;
+      top: 0;
+      height: 10%
+      width: 100%;
+    }
+
+    a, a:hover {
+      text-decoration: none;
+    }
+
+    .socialbtns, .socialbtns ul, .socialbtns li {
+      margin: 0;
+      padding: 0;
+      height: auto;
+    }
+
+    .socialbtns li {
+      list-style: none outside none;
+      display: inline-block;
+      padding: 5px;
+    }
+
+    .socialbtns .fa {
+      color: #666;
+      background-color: #fff;
+      box-shadow: -10px -5px 25px #fff, -10px 10px 20px #ddd;
+      width: 40px;
+      height: 28px;
+      padding-top: 12px;
+      border-radius: 30px;
+      -moz-border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -o-border-radius: 30px;
+      transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -webkit-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+    }
+
+    .socialbtns .fa:hover {
+      text-shadow: inset 10px 10px 10px #000;
+      box-shadow: -10px -5px 25px #ccc, -10px 10px 25px #fff;
+      background-color: #666;
+      color: #fff;
+      transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -webkit-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+    }
+      
+    .container {
+      background-color: #fff;
+      border-radius: 80px;
+      text-shadow: 5px 5px 5px #eee;
+      box-shadow:  -10px -5px 50px #eee, 10px 10px 50px #ddd;
+      margin: 50px auto;
+      max-inline-size: 550px;
+      padding: 50px;
+      align-items: center;
+    }
+    
+    h1 {
+      margin: 50px auto;
+      font-family: Impact;
+      text-align: center;
+      color: #666;
+      margin-block-end: 30px;
+      font-weight: 550;
+      text-shadow: 5px 5px 5px rgb(180, 170, 185);
+    }
+    
+    #question {
+      font-size: 18px;
+      margin-block-start: 25px;
+      margin-block-end: 25px;
+      font-weight: 550;
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+    }
+    
+    #answers {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      text-indent: -30px;
+      padding-inline-start: 70px;
+      padding-inline-end: 30px;
+    }
+    
+    label {
+      display: block;
+      margin-block-end: 10px;
+    }
+    
+    input[type="radio"] {
+      margin-inline-end: 10px;
+    }
+    
+    #submit {
+      margin: 10px auto;
+      font-family: Candara;
+      background-color: #fff;
+      color: #666;
+      border: solid #666;
+      border-radius: 20px;
+      font-size: 14px;
+      width: 100px;
+      height: 50px;
+      font-weight: 550;
+      text-shadow: 1px 1px 1px #fff;
+    }
+    
+    #submit:hover {
+      font-family: Impact;
+      background-color: #fff;
+      color: #666;
+      border: double #666;
+      font-size: 18px;
+      border-radius: 20px;
+      text-shadow: 1px 1px 1px #ddd;
+    }
+     
+    #score {
+      color: #333        ;
+      font-size: 30px;
+      margin: 20px auto;
+      text-align: center;
+      padding: 20px auto;
+      text-shadow: -10px -5px 25px #fff, -10px 10px 20px #ddd;
+    }
+    
+    button {
+      margin: 30px auto;
+      font-family: Impact;
+      background-color: #fff;
+      color: #666;
+      border: solid #666;
+      border-radius: 20px;
+      font-size: 20px;
+      padding: 0;
+      width: 100px;
+      height: 50px;
+      font-weight: 550;
+      text-shadow: 1px 1px 1px #fff;
+      box-shadow:  -10px -5px 50px #eee, 10px 10px 50px #ddd;
+    }
+  
+    .btn {
+      border: none;
+      color: #666;
+      display: inline-block;
+      margin: 1px auto;
+      border-radius: 50%;
+      inline-size: 100px;
+      block-size: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      cursor: pointer;
+      text-shadow: 2px 2px 1px rgb(255, 255, 255);
+      box-shadow: -10px -5px 25px #fff, -10px 10px 20px #ddd;
+    }
+  
+      /* Darker background on mouse-over */
+    .btn:hover {
+      font-weight: 550;
+      text-shadow: 2px 2px 1px rgba(179, 192, 179, 0.9); 
+    }
+  </style>
+  </head>
+  <body>
+    <nav align="center" class="socialbtns">
+      <ul>
+        <li><a href="https://xamr0n.github.io/" class="fa fa-lg fa-home" title="Home"></a></li>
+        <li><a href="https://xamronpc.github.io/" class="fa fa-lg fa-user" title="About Me"></a></li>
+        <li><a href="https://xamr0n.github.io/webslide" class="fa fa-lg fa-briefcase" title="Webslides"></a></li>
+        <li><a href="mailto:calayonorman@gmail.com" class="fa fa-lg fa-envelope" title="Email Me"></a></li>
+        <li><a href="#" class="fa fa-lg fa-pencil" title="istoryahe"></a></li>
+        <li><a href="#" class="fa fa-lg fa-qrcode" title="QR Code"></a></li>
+        <li><a href="#" class="fa fa-lg fa-code" title="Code"></a></li>
+      </ul>
+    </nav>
+    <h1>Test - Introduction to DC</h1>
+    <div class="container">
+      <div id="question"></div>
+      <div id="answers"></div>
+      <button id="submit">Submit</button>
+      <div id="score"></div>
+    </div>
+
+    <script src="scripts/test1.js"></script>
+  </body>
+</html>
